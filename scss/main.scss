@@ -1,0 +1,106 @@
+@import "colors";
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+margin: 0;
+padding: 0;
+background-color: $gray;
+}
+
+.header{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    -webkit-box-shadow: 1px 0px 13px 0px rgba(189,189,189,1);
+    -moz-box-shadow: 1px 0px 13px 0px rgba(189,189,189,1);
+    box-shadow: 1px 0px 13px 0px rgba(189,189,189,1);
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+    width: 85%;
+    margin: auto;
+    padding: 18px 0;
+    justify-content: space-between;
+    align-items: center;
+    .menu{
+        display: none;
+    }
+    ul{
+        li{
+            display: inline-block;
+            list-style: none;
+            margin: 0 15px;
+            a{
+                font-weight: bold;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $bgcolor;
+                transition: .3s;
+                &:hover{
+                    color: $gray;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+.navbar{
+    .menu{
+        display: inline-block;
+        .icon.close{
+            display: none;
+        }
+    }
+        ul{
+            li{
+                display: none;
+        }
+    }
+}
+
+.body{
+    padding: 96px 9px 8px 9px;
+}
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navbar.responsive{
+        display: block;
+        .menu{
+            float: inline-end;
+            padding: 10px 0 0 0;
+            .icon{
+                display: none;
+            }
+            .icon.close{
+                display: block;
+            top: 0;
+            }
+        }
+        .logo{
+            display: none;
+        }
+    }
+    
+    .navbar.responsive{
+        ul{
+            li{
+                display: block;
+                padding: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- LINKS FOR FONTS -->
+    <link rel="stylesheet" href="scss/dist/main.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Araniko College</title>
+</head>
+<body>
+<script>
+function nav() {
+  var x = document.getElementById("topnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+
+  function xmark() {
+  var y = document.getElementById("clicon");
+  if (y.className === "icon") {
+    y.className += " close";
+  } else {
+    y.className = "icon";
+  }
+}
+}
+</script>
+    <div class="header">
+    <div class="navbar" id="topnav">
+      <p class="logo">TEXT</p>
+            <div class="menu">
+              <a href="javascript:void(0);" class="icon close" onclick="nav()">
+              <img src="./scss/img/svg/menu-close.svg">
+              </a>
+            </div>
+      <ul>
+                <li><a href="./index.html" onclick="nav()">Home</a></li>
+                <li><a href="./index.html#events" onclick="nav()">Events</a></li>
+                <li><a href="./index.html#contact" onclick="nav()">Contact</a></li>
+                <li><a href="./index.html#about" onclick="nav()">About</a></li>
+            </ul>
+            <div class="menu">
+            <a href="javascript:void(0);" class="icon" id="clicon" onclick="nav()">
+            <img src="./scss/img/svg/menu.svg">
+            </a>
+            </div>
+    </div>
+    </div> 
+<div class="body">
+  <section id="events">
+    TEXT TEST
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </section>
+</div>
+</body>
+</html>
