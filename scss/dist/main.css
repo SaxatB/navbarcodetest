@@ -50,6 +50,10 @@ body {
   color: #ebe8e2;
 }
 
+.body {
+  padding: 96px 9px 8px 9px;
+}
+
 @media only screen and (max-width: 600px) {
   .navbar .menu {
     display: inline-block;
@@ -59,9 +63,6 @@ body {
   }
   .navbar ul li {
     display: none;
-  }
-  .body {
-    padding: 96px 9px 8px 9px;
   }
 }
 @media only screen and (max-width: 600px) {

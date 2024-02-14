@@ -54,6 +54,10 @@ background-color: $gray;
     }
 }
 
+.body{
+    padding: 96px 9px 8px 9px;
+}
+
 @media only screen and (max-width: 600px) {
 .navbar{
     .menu{
@@ -68,11 +72,6 @@ background-color: $gray;
         }
     }
 }
-
-.body{
-    padding: 96px 9px 8px 9px;
-}
-
 }
 
 
