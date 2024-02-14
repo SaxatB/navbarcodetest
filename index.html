@@ -19,7 +19,7 @@ function nav() {
   } else {
     x.className = "navbar";
   }
-
+}
   function xmark() {
   var y = document.getElementById("clicon");
   if (y.className === "icon") {
@@ -28,10 +28,10 @@ function nav() {
     y.className = "icon";
   }
 }
-}
+
 </script>
     <div class="header">
-    <div class="navbar" id="topnav">
+    <div class="navbar" id="topnav" tabindex="0">
       <p class="logo">TEXT</p>
             <div class="menu">
               <a href="javascript:void(0);" class="icon close" onclick="nav()">
@@ -39,10 +39,14 @@ function nav() {
               </a>
             </div>
       <ul>
-                <li><a href="./index.html" onclick="nav()">Home</a></li>
-                <li><a href="./index.html#events" onclick="nav()">Events</a></li>
-                <li><a href="./index.html#contact" onclick="nav()">Contact</a></li>
-                <li><a href="./index.html#about" onclick="nav()">About</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <hr>
+                <li><a href="./index.html#events">Events</a></li>
+                <hr>
+                <li><a href="./index.html#contact">Contact</a></li>
+                <hr>
+                <li><a href="./index.html#about">About</a></li>
+                <hr>
             </ul>
             <div class="menu">
             <a href="javascript:void(0);" class="icon" id="clicon" onclick="nav()">

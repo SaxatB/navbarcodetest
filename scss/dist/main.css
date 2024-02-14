@@ -31,7 +31,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.navbar .menu {
+.navbar .menu, .navbar hr {
   display: none;
 }
 .navbar ul li {
@@ -67,24 +67,32 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .navbar.responsive {
+    padding: 0;
+    margin: 0;
     display: block;
   }
   .navbar.responsive .menu {
-    float: inline-end;
-    padding: 10px 0 0 0;
+    float: right;
+    margin: 12px -9.25%;
   }
   .navbar.responsive .menu .icon {
     display: none;
   }
   .navbar.responsive .menu .icon.close {
-    display: block;
-    top: 0;
+    display: inline-block;
   }
   .navbar.responsive .logo {
     display: none;
   }
-  .navbar.responsive ul li {
+  .navbar.responsive ul {
+    padding: 42px 0 0 16px;
+  }
+  .navbar.responsive ul hr {
     display: block;
-    padding: 1rem;
+    width: 100%;
+  }
+  .navbar.responsive ul li {
+    margin: 0;
+    display: block;
   }
 }

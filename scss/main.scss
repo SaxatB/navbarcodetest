@@ -32,7 +32,7 @@ background-color: $gray;
     padding: 18px 0;
     justify-content: space-between;
     align-items: center;
-    .menu{
+    .menu,hr{
         display: none;
     }
     ul{
@@ -77,28 +77,34 @@ background-color: $gray;
 
 @media only screen and (max-width: 600px) {
     .navbar.responsive{
+        padding: 0;
+        margin: 0;
         display: block;
         .menu{
-            float: inline-end;
-            padding: 10px 0 0 0;
+            float: right;
+            margin: 12px -9.25%;
             .icon{
-                display: none;
+            display: none;
             }
             .icon.close{
-                display: block;
-            top: 0;
+                display: inline-block;
             }
         }
         .logo{
-            display: none;
+        display: none;
         }
     }
     
     .navbar.responsive{
         ul{
-            li{
+            padding: 42px 0 0 16px;
+            hr{
                 display: block;
-                padding: 1rem;
+                width: 100%;
+            }
+            li{
+                margin: 0;
+                display: block;
             }
         }
     }
