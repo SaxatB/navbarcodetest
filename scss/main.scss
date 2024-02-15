@@ -82,22 +82,21 @@ background-color: $gray;
     .mscroll{
         width: 7px;
         position: relative;
+        margin: 8px 11px;
         height: 9px;
         background-color: black;
         border-radius: 20px;
-        animation:mouse 1s infinite;
+        animation:mouse 1.1s infinite;
     }
 }
 
 @keyframes mouse{
-    from{
+    0%  {opacity: 1;}
+    50% {
         opacity: 0;
-        margin: 4px 11px;
+        margin: 28px 11px;
     }
-    to{
-        opacity: 1;
-        margin: 26px 11px;
-    }
+    100% {opacity: 0;}
 }
 
 
