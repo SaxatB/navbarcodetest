@@ -80,6 +80,7 @@ background-color: $gray;
     border: 1px solid black;
     border-radius: 15px;
     .mscroll{
+        z-index: -1;
         width: 7px;
         position: relative;
         margin: 8px 11px;
