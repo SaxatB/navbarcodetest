@@ -121,14 +121,11 @@ background-color: $gray;
     
     .navbar.responsive{
         ul{
-            padding: 0;
-            margin: 0;
             li{
+                margin: 0;
+                text-align: right;
                 padding: 12px;
-                border-bottom: 1px solid black;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
+                display: block;
             }
         }
     }

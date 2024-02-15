@@ -109,15 +109,10 @@ body {
   .navbar.responsive .logo {
     display: none;
   }
-  .navbar.responsive ul {
-    padding: 0;
-    margin: 0;
-  }
   .navbar.responsive ul li {
+    margin: 0;
+    text-align: right;
     padding: 12px;
-    border-bottom: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    display: block;
   }
 }
