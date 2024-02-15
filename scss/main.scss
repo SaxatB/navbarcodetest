@@ -32,7 +32,7 @@ background-color: $gray;
     padding: 18px 0;
     justify-content: space-between;
     align-items: center;
-    .menu,hr{
+    .menu{
         display: none;
     }
     ul{
@@ -58,7 +58,7 @@ background-color: $gray;
     padding: 96px 9px 8px 9px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 .navbar{
     .menu{
         display: inline-block;
@@ -75,44 +75,42 @@ background-color: $gray;
 }
 
 .mbody{
-    width: 30px;
-    height: 46px;
+    width: 24px;
+    height: 40px;
     border: 1px solid black;
     border-radius: 15px;
     .mscroll{
         z-index: -1;
         width: 7px;
+        margin: 6px 8.24px;
         position: relative;
-        margin: 8px 11px;
-        height: 9px;
+        height: 7px;
         background-color: black;
-        border-radius: 20px;
-        animation:mouse 1.1s infinite;
+        border-radius: 100%;
+        animation:mouse 1.7s infinite;
     }
 }
 
 @keyframes mouse{
     0%  {opacity: 1;}
-    50% {
+    40% {
         opacity: 0;
-        margin: 28px 11px;
+        margin: 28px 8.24px;
     }
     100% {opacity: 0;}
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .navbar.responsive{
-        padding: 0;
-        margin: 0;
-        display: block;
+        flex-direction: column;
+        align-items: flex-end;
         .menu{
-            float: right;
-            margin: 12px -9.25%;
             .icon{
             display: none;
             }
             .icon.close{
+                padding-top: 0.7rem;
                 display: inline-block;
             }
         }
@@ -123,14 +121,14 @@ background-color: $gray;
     
     .navbar.responsive{
         ul{
-            padding: 42px 0 0 16px;
-            hr{
-                display: block;
-                width: 100%;
-            }
+            padding: 0;
+            margin: 0;
             li{
-                margin: 0;
-                display: block;
+                padding: 12px;
+                border-bottom: 1px solid black;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
             }
         }
     }
