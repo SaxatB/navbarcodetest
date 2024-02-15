@@ -6,6 +6,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ebe8e2;
+  font-family: "Inter", sans-serif;
+  font-weight: 350;
 }
 
 .header {
@@ -17,15 +19,21 @@ body {
   box-shadow: 1px 0px 13px 0px rgb(189, 189, 189);
 }
 
-.logo {
-  width: 50px;
+.leftnav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+}
+
+.logo {
+  width: 45px;
 }
 
 .navbar {
   display: flex;
   position: relative;
-  width: 85%;
+  width: 95%;
   margin: auto;
   padding: 18px 0;
   justify-content: space-between;
@@ -68,17 +76,17 @@ body {
 .mbody {
   width: 24px;
   height: 40px;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 15px;
 }
 .mbody .mscroll {
   z-index: -1;
   width: 7px;
-  margin: 6px 8.24px;
+  margin: 6px 0.5rem;
   position: relative;
   height: 7px;
   background-color: black;
-  border-radius: 100%;
+  border-radius: 85%;
   animation: mouse 1.7s infinite;
 }
 
@@ -88,7 +96,7 @@ body {
   }
   40% {
     opacity: 0;
-    margin: 28px 8.24px;
+    margin: 28px 0.5rem;
   }
   100% {
     opacity: 0;
@@ -106,7 +114,7 @@ body {
     padding-top: 0.7rem;
     display: inline-block;
   }
-  .navbar.responsive .logo {
+  .navbar.responsive .logo, .navbar.responsive .nm {
     display: none;
   }
   .navbar.responsive ul li {
