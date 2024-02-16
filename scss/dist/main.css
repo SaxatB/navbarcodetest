@@ -223,7 +223,7 @@ header {
 .about .grid__aboutcont .grid__skills .skill_tab {
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   font-size: 1rem;
   background: rgba(153, 153, 153, 0.2);
   border-radius: 5px;
@@ -245,8 +245,8 @@ header {
     text-align: center;
   }
   .about .grid__aboutcont .grid__skills {
-    width: 100%;
-    padding-top: 1rem;
     justify-content: center;
+    padding-top: 1rem;
+    width: fit-content;
   }
 }
