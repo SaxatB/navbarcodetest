@@ -13,21 +13,26 @@ font-family: 'Inter', sans-serif;
 font-weight: 350;
 }
 
-.header{
+header{
     width: 100%;
     background-color: white;
     position: fixed;
     -webkit-box-shadow: 1px 0px 13px 0px rgba(189,189,189,1);
     -moz-box-shadow: 1px 0px 13px 0px rgba(189,189,189,1);
     box-shadow: 1px 0px 13px 0px rgba(189,189,189,1);
+    z-index: 2;
 }
 
 
 .leftnav{
+    a{
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    text-decoration: none;
+    color: $black;
+    }
 }
 
 .logo{
@@ -132,13 +137,25 @@ font-weight: 350;
         height: 7px;
         background-color: black;
         border-radius: 85%;
-        animation:mouse 1.6s infinite;
+        animation:mouse 1.5s infinite;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .mbody{
-    display: none;
+        border-radius: 4px;
+        .mscroll{
+        margin: 28px 0.5rem;
+        animation: mmob 1.5s infinite;
+        }
+    }
+    @keyframes mmob{
+    0%  {opacity: 1;}
+    40% {
+        opacity: 0;
+        margin: 6px 0.5rem;
+    }
+    100% {opacity: 0;}
     }
 }
 
@@ -171,7 +188,7 @@ font-weight: 350;
 
 @media only screen and (max-width: 768px) {
     .intro{
-    padding: 2rem 2rem 0.5rem;
+    padding: 1.5rem 1.5rem 1rem;
     #events{
         span{
             font-size: 34px;
