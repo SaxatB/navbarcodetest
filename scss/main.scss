@@ -1,6 +1,11 @@
 // Configs for navbar and colors here
 @import "colors";
 
+@mixin center{
+    justify-content: center;
+    text-align: center;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -27,8 +32,8 @@ header{
 .leftnav{
     a{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
     text-decoration: none;
     color: $black;
@@ -60,7 +65,7 @@ header{
                 text-decoration: none;
                 text-transform: uppercase;
                 color: $bgcolor;
-                transition: .3s;
+                transition: .2s;
                 &:hover{
                     color: cadetblue;
                 }
@@ -131,12 +136,12 @@ header{
     border-radius: 15px;
     .mscroll{
         z-index: 1;
-        width: 7px;
-        margin: 6px 0.5rem;
+        width: 8px;
+        margin: 6px auto;
         position: relative;
         height: 7px;
         background-color: black;
-        border-radius: 85%;
+        border-radius: 90%;
         animation:mouse 1.5s infinite;
     }
 }
@@ -145,7 +150,7 @@ header{
     .mbody{
         border-radius: 4px;
         .mscroll{
-        margin: 28px 0.5rem;
+        margin: 28px auto;
         animation: mmob 1.5s infinite;
         }
     }
@@ -153,7 +158,7 @@ header{
     0%  {opacity: 1;}
     40% {
         opacity: 0;
-        margin: 6px 0.5rem;
+        margin: 6px auto;
     }
     100% {opacity: 0;}
     }
@@ -163,7 +168,7 @@ header{
     0%  {opacity: 1;}
     40% {
         opacity: 0;
-        margin: 28px 0.5rem;
+        margin: 28px auto;
     }
     100% {opacity: 0;}
 }
@@ -172,9 +177,7 @@ header{
     background-color: cadetblue;
     padding: 4rem 4rem 1rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    @include center;
     #events{
         span{
             font-size: 46px;

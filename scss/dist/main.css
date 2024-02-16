@@ -22,8 +22,8 @@ header {
 
 .leftnav a {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   cursor: pointer;
   text-decoration: none;
   color: #000000;
@@ -55,7 +55,7 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   color: #0c0c0c;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .navbar ul li a:hover {
   color: cadetblue;
@@ -110,12 +110,12 @@ header {
 }
 .mbody .mscroll {
   z-index: 1;
-  width: 7px;
-  margin: 6px 0.5rem;
+  width: 8px;
+  margin: 6px auto;
   position: relative;
   height: 7px;
   background-color: black;
-  border-radius: 85%;
+  border-radius: 90%;
   animation: mouse 1.5s infinite;
 }
 
@@ -124,7 +124,7 @@ header {
     border-radius: 4px;
   }
   .mbody .mscroll {
-    margin: 28px 0.5rem;
+    margin: 28px auto;
     animation: mmob 1.5s infinite;
   }
   @keyframes mmob {
@@ -133,7 +133,7 @@ header {
     }
     40% {
       opacity: 0;
-      margin: 6px 0.5rem;
+      margin: 6px auto;
     }
     100% {
       opacity: 0;
@@ -146,7 +146,7 @@ header {
   }
   40% {
     opacity: 0;
-    margin: 28px 0.5rem;
+    margin: 28px auto;
   }
   100% {
     opacity: 0;
@@ -156,7 +156,6 @@ header {
   background-color: cadetblue;
   padding: 4rem 4rem 1rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   text-align: center;
 }
