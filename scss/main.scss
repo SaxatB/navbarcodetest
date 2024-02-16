@@ -1,3 +1,4 @@
+// Configs for navbar and colors here
 @import "colors";
 
 html{
@@ -56,15 +57,11 @@ font-weight: 350;
                 color: $bgcolor;
                 transition: .3s;
                 &:hover{
-                    color: $gray;
+                    color: cadetblue;
                 }
             }
         }
     }
-}
-
-.body{
-    padding: 96px 9px 8px 9px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -84,31 +81,6 @@ font-weight: 350;
 }
 }
 
-.mbody{
-    width: 24px;
-    height: 40px;
-    border: 2px solid black;
-    border-radius: 15px;
-    .mscroll{
-        z-index: -1;
-        width: 7px;
-        margin: 6px 0.5rem;
-        position: relative;
-        height: 7px;
-        background-color: black;
-        border-radius: 85%;
-        animation:mouse 1.7s infinite;
-    }
-}
-
-@keyframes mouse{
-    0%  {opacity: 1;}
-    40% {
-        opacity: 0;
-        margin: 28px 0.5rem;
-    }
-    100% {opacity: 0;}
-}
 
 
 @media only screen and (max-width: 768px) {
@@ -138,5 +110,72 @@ font-weight: 350;
                 display: block;
             }
         }
+    }
+}
+
+// All parts related to body below here
+.body{
+    padding: 4.6rem 0 8px 0;
+}
+
+.mbody{
+    margin: auto;
+    width: 24px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 15px;
+    .mscroll{
+        z-index: 1;
+        width: 7px;
+        margin: 6px 0.5rem;
+        position: relative;
+        height: 7px;
+        background-color: black;
+        border-radius: 85%;
+        animation:mouse 1.6s infinite;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mbody{
+    display: none;
+    }
+}
+
+@keyframes mouse{
+    0%  {opacity: 1;}
+    40% {
+        opacity: 0;
+        margin: 28px 0.5rem;
+    }
+    100% {opacity: 0;}
+}
+
+.intro{
+    background-color: cadetblue;
+    padding: 4rem 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    #events{
+        span{
+            font-size: 46px;
+            font-weight: bold;
+        }
+        p{
+            padding: 1rem 0 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .intro{
+    padding: 2rem 2rem 0.5rem;
+    #events{
+        span{
+            font-size: 34px;
+        }
+    }
     }
 }
