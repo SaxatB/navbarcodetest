@@ -8,6 +8,12 @@ body {
   background-color: #ebe8e2;
   font-family: "Inter", sans-serif;
   font-weight: 350;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header {
@@ -202,15 +208,27 @@ header {
 .about .grid__aboutcont {
   display: flex;
   padding: 2.5rem 0.5rem 1rem 0.5rem;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .about .grid__aboutcont .grid__about {
-  width: 50%;
+  width: 45%;
   text-align: left;
 }
 .about .grid__aboutcont .grid__skills {
-  display: contents;
-  font-weight: 500;
+  width: 50%;
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+}
+.about .grid__aboutcont .grid__skills .skill_tab {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  background: rgba(153, 153, 153, 0.2);
+  border-radius: 5px;
+  font-weight: 600;
+  color: #777;
 }
 
 @media only screen and (max-width: 768px) {
@@ -227,7 +245,8 @@ header {
     text-align: center;
   }
   .about .grid__aboutcont .grid__skills {
-    align-self: center;
+    width: 100%;
     padding-top: 1rem;
+    justify-content: center;
   }
 }

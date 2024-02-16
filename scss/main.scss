@@ -16,6 +16,14 @@ padding: 0;
 background-color: $gray;
 font-family: 'Inter', sans-serif;
 font-weight: 350;
+// Hides Scroll bar 
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+
+// Hides scroll bar for chrome
+body::-webkit-scrollbar{
+    display: none;
 }
 
 header{
@@ -226,14 +234,26 @@ header{
     .grid__aboutcont{
         display: flex;
         padding: 2.5rem 0.5rem 1rem 0.5rem;
-        justify-content: space-between;
+        justify-content: space-around;
     .grid__about{
-        width: 50%;
+        width: 45%;
         text-align: left;
     }
     .grid__skills{
-        display: contents;
-        font-weight: 500;
+        width: 50%;
+        display: flex;
+        align-self: center;
+        flex-wrap: wrap;
+        .skill_tab{
+            padding: 0.5rem 1rem;
+            margin-bottom: 1rem;
+            margin-right: 1rem;
+            font-size: 1rem;
+            background: rgba(153, 153, 153, 0.2);
+            border-radius: 5px;
+            font-weight: 600;
+            color: #777;
+        }
     }
 }
 }
@@ -254,8 +274,9 @@ header{
                 text-align: center;
             }
             .grid__skills{
-                align-self: center;
+                width: 100%;
                 padding-top: 1rem;
+                justify-content: center;
             }
         }
     }
