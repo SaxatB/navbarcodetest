@@ -208,10 +208,12 @@ header {
 .about .grid__aboutcont {
   display: flex;
   padding: 2.5rem 0.5rem 1rem 0.5rem;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .about .grid__aboutcont .grid__about {
   width: 45%;
+}
+.about .grid__aboutcont .grid__about span {
   text-align: left;
 }
 .about .grid__aboutcont .grid__skills {
@@ -242,11 +244,18 @@ header {
   }
   .about .grid__aboutcont .grid__about {
     width: 100%;
+    margin: 0 0.25rem;
+  }
+  .about .grid__aboutcont .grid__about h2 {
     text-align: center;
   }
+  .about .grid__aboutcont .grid__about span {
+    text-align: left;
+  }
   .about .grid__aboutcont .grid__skills {
+    margin: 0 0.6rem;
     justify-content: center;
-    padding-top: 1rem;
+    padding-top: 2rem;
     width: fit-content;
   }
 }

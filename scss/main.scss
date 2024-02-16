@@ -234,10 +234,12 @@ header{
     .grid__aboutcont{
         display: flex;
         padding: 2.5rem 0.5rem 1rem 0.5rem;
-        justify-content: space-around;
+        justify-content: space-evenly;
     .grid__about{
         width: 45%;
-        text-align: left;
+        span{
+            text-align: left;
+        }
     }
     .grid__skills{
         width: 50%;
@@ -271,11 +273,18 @@ header{
             justify-content: center;
             .grid__about{
                 width: 100%;
+                margin: 0 0.25rem;
+               h2{
                 text-align: center;
+               }
+               span{
+                text-align: left;
+               } 
             }
             .grid__skills{
+                margin: 0 0.6rem;
                 justify-content: center;
-                padding-top: 1rem;
+                padding-top: 2rem;
                 width: fit-content;
             }
         }
