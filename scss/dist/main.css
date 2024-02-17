@@ -165,11 +165,11 @@ header {
   justify-content: center;
   text-align: center;
 }
-.intro #events span {
+.intro #aboutsb span {
   font-size: 46px;
   font-weight: bold;
 }
-.intro #events p {
+.intro #aboutsb p {
   padding: 1rem 0 0.5rem;
 }
 
@@ -177,7 +177,7 @@ header {
   .intro {
     padding: 1.5rem 1.5rem 1rem;
   }
-  .intro #events span {
+  .intro #aboutsb span {
     font-size: 34px;
   }
 }
@@ -258,4 +258,35 @@ header {
     padding-top: 2rem;
     width: fit-content;
   }
+}
+.projects {
+  padding: 1rem;
+}
+.projects .project_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projects .header3 {
+  font-size: 22px;
+  padding: 0.25rem;
+  font-weight: bold;
+}
+.projects .text3 {
+  padding: 0.25rem;
+}
+.projects hr {
+  width: 1.5rem;
+  height: 4px;
+  background-color: cadetblue;
+  color: cadetblue;
+  border-radius: 6px;
+}
+.projects .project_content img {
+  border: 1px solid black;
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  width: 780px;
 }

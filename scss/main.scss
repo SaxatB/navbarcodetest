@@ -186,7 +186,7 @@ header{
     padding: 4rem 4rem 1rem;
     display: flex;
     @include center;
-    #events{
+    #aboutsb{
         span{
             font-size: 46px;
             font-weight: bold;
@@ -200,7 +200,7 @@ header{
 @media only screen and (max-width: 768px) {
     .intro{
     padding: 1.5rem 1.5rem 1rem;
-    #events{
+    #aboutsb{
         span{
             font-size: 34px;
         }
@@ -287,6 +287,41 @@ header{
                 padding-top: 2rem;
                 width: fit-content;
             }
+        }
+    }
+}
+
+// Projects Section
+.projects{
+    padding: 1rem;
+    .project_title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header3{
+        font-size: 22px;
+        padding: 0.25rem;
+        font-weight: bold;
+    }
+    .text3{
+        padding: 0.25rem;
+    }
+    hr{
+        width: 1.5rem;
+        height: 4px;
+        background-color: cadetblue;
+        color: cadetblue;
+        border-radius: 6px;
+    }
+    .project_content{
+        img{
+            border: 1px solid black;
+            display: flex;
+            margin: 1rem;
+            flex-direction: column;
+            width: 780px;
         }
     }
 }
