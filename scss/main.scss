@@ -281,8 +281,8 @@ header{
                 text-align: center;
                }
                span{
-                text-align: left;
-               } 
+                text-align: center;
+               }
             }
             .grid__skills{
                 margin: 0 0.6rem;
@@ -358,4 +358,13 @@ header{
         }
     }
 }
+}
+
+//Socials
+
+// Footer
+footer{
+    background-color: $black;
+    color: $fgcolor;
+    padding: 1rem;
 }

@@ -254,7 +254,7 @@ header {
     text-align: center;
   }
   .about .grid__aboutcont .grid__about span {
-    text-align: left;
+    text-align: center;
   }
   .about .grid__aboutcont .grid__skills {
     margin: 0 0.6rem;
@@ -321,4 +321,9 @@ header {
   .projects .project_content .project_main span p {
     text-align: center;
   }
+}
+footer {
+  background-color: #000000;
+  color: rgb(250, 247, 247);
+  padding: 1rem;
 }
