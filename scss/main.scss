@@ -71,6 +71,7 @@ header{
             a{
                 font-weight: bold;
                 text-decoration: none;
+                letter-spacing: .6px;
                 text-transform: uppercase;
                 color: $bgcolor;
                 transition: .2s;
@@ -86,7 +87,7 @@ header{
 .navbar{
     width: 90%;
     .menu{
-        display: inline-block;
+        display: block;
         .icon.close{
             display: none;
         }
@@ -124,8 +125,9 @@ header{
             li{
                 margin: 0;
                 text-align: right;
-                padding: 12px;
+                padding: .8rem;
                 display: block;
+                &:last-child{padding-bottom: 0;}
             }
         }
     }
@@ -181,6 +183,7 @@ header{
     100% {opacity: 0;}
 }
 
+// Intro Section
 .intro{
     background-color: cadetblue;
     padding: 4rem 4rem 1rem;
@@ -297,8 +300,7 @@ header{
     .project_title{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include center;
     }
     .header3{
         font-size: 22px;
@@ -317,12 +319,43 @@ header{
         border-radius: 6px;
     }
     .project_content{
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    .project_main{
+        display: flex;
         img{
-            border: 1px solid black;
+            width: 58%;
+            margin: 2rem 1rem;
+            border: .5px solid black;
+        }
+        span{
             display: flex;
-            margin: 1rem;
             flex-direction: column;
-            width: 780px;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
         }
     }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .projects{
+    .project_content{
+        .project_main{
+            flex-direction: column;
+            img{
+                margin: 1rem .5rem;
+                width: 100%;
+                align-self: center;
+            }
+            span{
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
 }

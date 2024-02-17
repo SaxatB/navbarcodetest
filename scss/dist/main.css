@@ -59,6 +59,7 @@ header {
 .navbar ul li a {
   font-weight: bold;
   text-decoration: none;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
   color: #0c0c0c;
   transition: 0.2s;
@@ -72,7 +73,7 @@ header {
     width: 90%;
   }
   .navbar .menu {
-    display: inline-block;
+    display: block;
   }
   .navbar .menu .icon.close {
     display: none;
@@ -99,8 +100,11 @@ header {
   .navbar.responsive ul li {
     margin: 0;
     text-align: right;
-    padding: 12px;
+    padding: 0.8rem;
     display: block;
+  }
+  .navbar.responsive ul li:last-child {
+    padding-bottom: 0;
   }
 }
 .body {
@@ -266,7 +270,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 .projects .header3 {
   font-size: 22px;
@@ -284,10 +288,37 @@ header {
   color: cadetblue;
   border-radius: 6px;
 }
-.projects .project_content img {
-  border: 1px solid black;
+.projects .project_content {
+  padding-top: 2rem;
   display: flex;
-  margin: 1rem;
   flex-direction: column;
-  width: 780px;
+}
+.projects .project_content .project_main {
+  display: flex;
+}
+.projects .project_content .project_main img {
+  width: 58%;
+  margin: 2rem 1rem;
+  border: 0.5px solid black;
+}
+.projects .project_content .project_main span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .projects .project_content .project_main {
+    flex-direction: column;
+  }
+  .projects .project_content .project_main img {
+    margin: 1rem 0.5rem;
+    width: 100%;
+    align-self: center;
+  }
+  .projects .project_content .project_main span p {
+    text-align: center;
+  }
 }
