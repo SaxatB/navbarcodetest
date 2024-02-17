@@ -275,6 +275,7 @@ header {
 }
 .projects .text3 {
   padding: 0.25rem;
+  text-align: center;
 }
 .projects hr {
   width: 1.5rem;
