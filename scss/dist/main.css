@@ -26,7 +26,7 @@ header {
   z-index: 2;
 }
 
-.leftnav a {
+.leftnav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,6 +220,9 @@ header {
 .about .grid__aboutcont .grid__about span {
   text-align: left;
 }
+.about .grid__aboutcont .grid__about span p {
+  color: #333;
+}
 .about .grid__aboutcont .grid__skills {
   width: 50%;
   display: flex;
@@ -308,6 +311,13 @@ header {
   align-items: center;
   text-align: left;
 }
+.projects .project_content .project_main span h2 a {
+  color: black;
+  text-decoration: none;
+}
+.projects .project_content .project_main span h2 a:hover {
+  color: #444;
+}
 
 @media only screen and (max-width: 768px) {
   .projects .project_content .project_main {
@@ -325,5 +335,29 @@ header {
 footer {
   background: #000000;
   color: rgb(250, 247, 247);
-  padding: 1rem;
+  padding: 2rem;
+}
+footer .footer_body {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_body .social_name {
+  width: 45%;
+}
+footer .footer_body .social_links {
+  text-align: right;
+  align-self: flex-start;
+}
+footer .footer_body .social_links img {
+  align-items: flex-end;
+  width: 32px;
+}
+
+@media only screen and (max-width: 768) {
+  footer {
+    padding: 1rem;
+  }
+  footer .footer_body {
+    justify-content: baseline;
+  }
 }
