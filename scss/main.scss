@@ -44,6 +44,9 @@ header{
     cursor: pointer;
     text-decoration: none;
     color: $black;
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
 }
 
 .logo{
@@ -83,7 +86,7 @@ header{
 
 @media only screen and (max-width: 768px) {
 .navbar{
-    width: 90%;
+    width: 92%;
     .menu{
         display: block;
         .icon.close{
@@ -247,13 +250,17 @@ header{
     }
     .grid__skills{
         width: 50%;
+        .skill_header{
+            align-self: center;
+        }
+        .skill_align{
         display: flex;
-        align-self: center;
         flex-wrap: wrap;
+        }
         .skill_tab{
-            padding: 0.5rem 1rem;
+            padding: .5rem .8rem;
             margin-bottom: 1rem;
-            margin-right: 0.5rem;
+            margin-right: 0.7rem;
             font-size: 1rem;
             background: rgba(153, 153, 153, 0.2);
             border-radius: 5px;
@@ -277,7 +284,7 @@ header{
             justify-content: center;
             .grid__about{
                 width: 100%;
-                margin: 0 0.25rem;
+                margin: auto;
                h2{
                 text-align: center;
                }
@@ -286,10 +293,14 @@ header{
                }
             }
             .grid__skills{
-                margin: 0 0.6rem;
+                margin: auto;
+                width: 100%;
                 justify-content: center;
-                padding-top: 2rem;
+                padding: 2rem .57rem;
                 width: fit-content;
+                .skill_header{
+                    text-align: center;
+                }
             }
         }
     }
