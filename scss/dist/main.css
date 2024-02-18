@@ -71,7 +71,7 @@ header {
   color: cadetblue;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .navbar {
     width: 92%;
   }
@@ -85,7 +85,7 @@ header {
     display: none;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .navbar.responsive {
     flex-direction: column;
     align-items: flex-end;
@@ -132,7 +132,7 @@ header {
   animation: mouse 1.5s infinite;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .mbody {
     border-radius: 4px;
   }
@@ -180,7 +180,7 @@ header {
   padding: 1rem 0 0.5rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .intro {
     padding: 1.5rem 1.5rem 1rem;
   }
@@ -243,11 +243,11 @@ header {
   font-size: 1rem;
   background: rgba(153, 153, 153, 0.2);
   border-radius: 5px;
-  font-weight: 600;
+  font-weight: 768;
   color: #777;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .about .grid__header .text2 {
     text-align: center;
     padding: 0 1rem 0 1rem;
@@ -330,7 +330,7 @@ header {
   color: #444;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .projects .project_content .project_main {
     flex-direction: column;
   }
@@ -364,7 +364,7 @@ footer .footer_body .social_links img {
   width: 32px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   footer {
     padding: 1rem;
   }
