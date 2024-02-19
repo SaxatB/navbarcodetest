@@ -250,14 +250,15 @@ header{
     }
     .grid__skills{
         width: 50%;
-        .skill_header{
-            align-self: center;
-        }
         .skill_align{
         display: flex;
         flex-wrap: wrap;
         }
+        .skill_header{
+            text-align: left;
+        }
         .skill_tab{
+            text-align: center;
             padding: .5rem .8rem;
             margin-bottom: 1rem;
             margin-right: 0.7rem;
@@ -284,23 +285,13 @@ header{
             justify-content: center;
             .grid__about{
                 width: 100%;
-                margin: auto;
-               h2{
-                text-align: center;
-               }
-               span{
-                text-align: center;
-               }
+                margin: .4rem;
             }
             .grid__skills{
-                margin: auto;
-                width: 100%;
-                justify-content: center;
+                text-align: center;
                 padding: 2rem .57rem;
+                justify-content: space-between;
                 width: fit-content;
-                .skill_header{
-                    text-align: center;
-                }
             }
         }
     }

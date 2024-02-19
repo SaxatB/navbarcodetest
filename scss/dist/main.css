@@ -229,14 +229,15 @@ header {
 .about .grid__aboutcont .grid__skills {
   width: 50%;
 }
-.about .grid__aboutcont .grid__skills .skill_header {
-  align-self: center;
-}
 .about .grid__aboutcont .grid__skills .skill_align {
   display: flex;
   flex-wrap: wrap;
 }
+.about .grid__aboutcont .grid__skills .skill_header {
+  text-align: left;
+}
 .about .grid__aboutcont .grid__skills .skill_tab {
+  text-align: center;
   padding: 0.5rem 0.8rem;
   margin-bottom: 1rem;
   margin-right: 0.7rem;
@@ -258,23 +259,13 @@ header {
   }
   .about .grid__aboutcont .grid__about {
     width: 100%;
-    margin: auto;
-  }
-  .about .grid__aboutcont .grid__about h2 {
-    text-align: center;
-  }
-  .about .grid__aboutcont .grid__about span {
-    text-align: center;
+    margin: 0.4rem;
   }
   .about .grid__aboutcont .grid__skills {
-    margin: auto;
-    width: 100%;
-    justify-content: center;
-    padding: 2rem 0.57rem;
-    width: fit-content;
-  }
-  .about .grid__aboutcont .grid__skills .skill_header {
     text-align: center;
+    padding: 2rem 0.57rem;
+    justify-content: space-between;
+    width: fit-content;
   }
 }
 .projects {
