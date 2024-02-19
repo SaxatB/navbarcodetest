@@ -274,10 +274,10 @@ header{
 
 @media only screen and (max-width: 768px) {
     .about{
+        padding: 2rem .4rem 0;
         .grid__header{
             .text2{
             text-align: center;
-            padding: 0 1rem 0 1rem;
             }
         }
         .grid__aboutcont{
@@ -285,11 +285,10 @@ header{
             justify-content: center;
             .grid__about{
                 width: 100%;
-                margin: .4rem;
             }
             .grid__skills{
                 text-align: center;
-                padding: 2rem .57rem;
+                padding-bottom: .5rem;
                 justify-content: space-between;
                 width: fit-content;
             }
