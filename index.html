@@ -30,6 +30,10 @@ function nav() {
   }
 }
 
+function navc() {
+  var x = document.getElementById("topnav");
+    x.className = "navbar";
+  }
 </script>
     <header>
     <div class="navbar" id="topnav">
@@ -44,9 +48,9 @@ function nav() {
             </div>
       <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./index.html#about__link">About</a></li>
-                <li><a href="./index.html#project">Projects</a></li>
-                <li><a href="./index.html#social">Socials</a></li>
+                <li><a href="./index.html#about__link" onclick="navc()">About</a></li>
+                <li><a href="./index.html#project" onclick="navc()">Projects</a></li>
+                <li><a href="./index.html#social" onclick="navc()">Socials</a></li>
             </ul>
             <div class="menu">
             <a href="javascript:void(0);" class="icon" id="clicon" onclick="nav()">
