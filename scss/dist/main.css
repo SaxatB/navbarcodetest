@@ -9,7 +9,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 350;
   -ms-overflow-style: none;
-  scrollbar-width: none;
+  scrollbar-width: 0;
 }
 
 body::-webkit-scrollbar {
