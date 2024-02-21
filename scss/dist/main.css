@@ -180,7 +180,7 @@ header {
   padding: 1rem 0 0.5rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .intro {
     padding: 1.5rem 1.5rem 1rem;
   }
@@ -322,7 +322,7 @@ header {
   color: #444;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .projects .project_content .project_main {
     flex-direction: column;
   }
