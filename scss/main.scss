@@ -321,7 +321,7 @@ header{
         border-radius: 6px;
     }
     .project_content{
-        padding-top: 2rem;
+        padding-top: 2.3rem;
         display: flex;
         flex-direction: column;
     .project_main{
@@ -354,6 +354,7 @@ header{
 @media only screen and (max-width: 768px){
     .projects{
     .project_content{
+        padding-top: 2rem;
         .project_main{
             flex-direction: column;
             img{
@@ -377,7 +378,13 @@ header{
 footer{
     background: $black;
     color: $fgcolor;
-    padding: 2rem;
+    padding: 1rem;
+    hr{
+        border: none;
+        color: #555;
+        background-color: #555;
+        height: .5px;
+    }
 .footer_body{
     display: flex;
     justify-content: space-between;
@@ -387,9 +394,11 @@ footer{
     .social_links{
         text-align: right;
         align-self: flex-start;
-    img{
-        align-items: flex-end;
-        width: 32px;
+    a{
+        font-size: 1.5rem;
+        margin-left: .25rem;
+        color: white;
+        align-self: flex-end;
     }
     }
 }
@@ -406,6 +415,10 @@ footer{
         .social_links{
             text-align: left;
             padding-bottom: .5rem;
+            a{
+                margin-left: 0;
+                margin-right: .25rem;
+            }
         }
     }
 }
