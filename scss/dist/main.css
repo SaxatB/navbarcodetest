@@ -132,7 +132,7 @@ header {
   animation: mouse 1.5s infinite;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .mbody {
     border-radius: 4px;
   }
@@ -140,17 +140,17 @@ header {
     margin: 28px auto;
     animation: mmob 1.5s infinite;
   }
-  @keyframes mmob {
-    0% {
-      opacity: 1;
-    }
-    40% {
-      opacity: 0;
-      margin: 6px auto;
-    }
-    100% {
-      opacity: 0;
-    }
+}
+@keyframes mmob {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    margin: 6px auto;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes mouse {
