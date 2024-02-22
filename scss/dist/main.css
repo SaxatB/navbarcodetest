@@ -90,15 +90,20 @@ header {
     flex-direction: column;
     align-items: flex-end;
   }
+  .navbar.responsive .resmenu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar.responsive .resmenu .leftnav {
+    align-self: flex-start;
+  }
   .navbar.responsive .menu .icon {
     display: none;
   }
   .navbar.responsive .menu .icon.close {
     padding-top: 0.7rem;
     display: inline-block;
-  }
-  .navbar.responsive .logo, .navbar.responsive .nm {
-    display: none;
   }
   .navbar.responsive ul li {
     margin: 0;
